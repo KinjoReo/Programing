@@ -137,8 +137,8 @@ public:
 		}
 		else if (location.y < 1e-6f)
 		{
-			this->x /= 0.0f;
-			this->y /= 0.0f;
+			this->x = 0.0f;
+			this->y = 0.0f;
 		}
 		else
 		{

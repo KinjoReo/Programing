@@ -241,7 +241,7 @@ eSceneType GameMainScene::GetNowScene() const
 void GameMainScene::ReadHighScore()
 {
 	RankingData data;
-	data, Initialize();
+	data.Initialize();
 
 	high_score = data.GetScore(0);
 

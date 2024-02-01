@@ -37,3 +37,26 @@ void Enemy::Draw() const
 	// 敵画像の描画
 	DrawRotaGraphF(location.x, location.y, 1.0, 0.0, image, TRUE);
 }
+
+void Enemy::Finalize()
+{
+
+}
+
+// 敵のタイプを取得
+int Enemy::GetType() const
+{
+	return type;
+}
+
+// 位置情報を取得
+Vector2D Enemy::GetLocation() const
+{
+	return location;
+}
+
+// 当たり判定の大きさを取得
+Vector2D Enemy::GetBoxSize() const
+{
+	return box_size;
+}
