@@ -22,7 +22,7 @@ void Player::Initialize()
 	box_size = Vector2D(31.0f, 60.0f);
 	angle = 0.0f;
 	speed = 3.0f;
-	hp = 1000;
+	hp = 100;
 	fuel = 20000;
 	barrier_count = 3;
 
@@ -122,7 +122,7 @@ void Player::SetActive(bool flg)
 // ‘Ì—ÍŒ¸­ˆ—
 void Player::DecreaseHp(float value)
 {
-	this->hp += value;
+	this->hp += value * 0.5;
 }
 
 // ˆÊ’uî•ñŽæ“¾ˆ—
